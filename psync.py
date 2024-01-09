@@ -24,7 +24,7 @@ class MyHandler(FileSystemEventHandler):
             sftp.put(event.src_path)
 
 def main():
-    folder_to_watch = 'C:\Tools\Automatiaciones\escucha'
+    folder_to_watch = 'carpeta_que_deseas_monitorear'
 
     event_handler = MyHandler()
     observer = Observer()
